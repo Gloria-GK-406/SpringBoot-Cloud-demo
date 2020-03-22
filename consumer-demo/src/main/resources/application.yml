@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: Consumer-Server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka/
+user-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
